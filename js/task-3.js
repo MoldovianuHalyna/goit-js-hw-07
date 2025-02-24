@@ -1,5 +1,5 @@
-const input = document.querySelector('input');
-const span = document.querySelector('h1 span');
+const input = document.querySelector('input#name-input');
+const span = document.querySelector('span#name-output');
 input.addEventListener('input', () => {
   let inputValue = input.value.trim();
   if (inputValue === ' ') {

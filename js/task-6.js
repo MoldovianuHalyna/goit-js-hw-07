@@ -5,23 +5,22 @@ const container = document.querySelector('#boxes');
 
 const createBoxes = function () {
   const amount = parseInt(input.value);
-  if (amount < 0 || amount > 100) {
+  if (isNaN(amount) || amount < 0 || amount > 100) {
     alert('Please enter a number from 1 to 100');
     return;
   }
-  const boxes = [];
+  const boxes = document.createDocumentFragment();
 
   for (let i = 0; i < amount; i++) {
     const box = document.createElement('div');
     box.classList.add('box');
     box.style.backgroundColor = getRandomHexColor();
-    box.style.width += `${10 + i * 10}px`;
-    box.style.height += `${10 + i * 10}px`;
+    box.style.width = `${30 + i * 10}px`;
+    box.style.height = `${30 + i * 10}px`;
 
-    container.appendChild(box);
-    boxes.push(box);
+    boxes.appendChild(box);
   }
-
+  container.appendChild(boxes);
   input.value = '';
 };
 

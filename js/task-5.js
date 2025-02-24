@@ -1,6 +1,6 @@
 const button = document.querySelector('.change-color');
 const span = document.querySelector('.color');
-const body = document.querySelector('.body');
+const body = document.body;
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
