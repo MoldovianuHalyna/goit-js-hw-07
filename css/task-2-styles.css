@@ -6,8 +6,11 @@
   column-gap: 24px;
   row-gap: 48px;
 }
-
+.list-item {
+  width: calc(33%-12px);
+}
 .image {
   width: 360px;
   height: 300px;
+  object-fit: cover;
 }

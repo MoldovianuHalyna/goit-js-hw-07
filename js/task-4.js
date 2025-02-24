@@ -16,3 +16,14 @@ const submitFunction = function (event) {
   form.reset();
 };
 form.addEventListener('submit', submitFunction);
+
+// adding styles
+
+document.querySelector('p a').classList.add('go-back-link');
+const labels = document.querySelectorAll('.login-form label');
+labels.forEach(el => el.classList.add('input-label'));
+
+const inputs = document.querySelectorAll('.login-form label input');
+inputs.forEach(el => el.classList.add('input-field'));
+
+document.querySelector('button').classList.add('submit-btn');

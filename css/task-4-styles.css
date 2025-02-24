@@ -17,12 +17,25 @@
   letter-spacing: 0.04em;
   color: #2e2f42;
   font-family: "Montserrat", sans-serif;
+  transition: border 500ms linear;
 }
 .input-field {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  outline: transparent;
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
   height: 40px;
+  transition: border 500ms linear;
+}
+.input-field:hover,
+.input-field:focus {
+  border: 1px solid #000;
 }
 .submit-btn {
   border: none;
@@ -38,4 +51,9 @@
   color: #fff;
   margin-top: 24px;
   cursor: pointer;
+  transition: background-color 500ms linear;
+}
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #6c8cff;
 }

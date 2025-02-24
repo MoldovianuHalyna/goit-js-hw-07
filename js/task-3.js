@@ -1,5 +1,5 @@
-const input = document.querySelector('.input');
-const span = document.querySelector('.span');
+const input = document.querySelector('input');
+const span = document.querySelector('h1 span');
 input.addEventListener('input', () => {
   let inputValue = input.value.trim();
   if (inputValue === ' ') {
@@ -7,3 +7,8 @@ input.addEventListener('input', () => {
   }
   span.textContent = inputValue;
 });
+
+// adding styles
+document.querySelector('p a').classList.add('go-back-link');
+
+input.classList.add('input');

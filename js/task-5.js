@@ -14,3 +14,8 @@ function changeColor() {
 }
 
 button.addEventListener('click', changeColor);
+
+// adding styles
+
+document.querySelector('p a').classList.add('go-back-link');
+document.querySelector('.widget p').classList.add('header');
